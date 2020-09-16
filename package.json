@@ -1,30 +1,34 @@
 {
   "name": "tintetorsdag",
-  "version": "1.0.0",
-  "description": "aldri sint med en tint",
-  "main": "index.js",
-  "scripts": {
-    "dev": "parcel src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html",
-    "build": "parcel build src/index.html && docker build -t mariussd/tintetorsdag . && docker tag mariussd/tintetorsdag mariussd/tintetorsdag:latest && docker push mariussd/tintetorsdag:latest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mariussd/tintetorsdag.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mariussd/tintetorsdag/issues"
-  },
-  "homepage": "https://github.com/mariussd/tintetorsdag#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
   },
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.10"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && docker build -t mariussd/tintetorsdag . && docker tag mariussd/tintetorsdag mariussd/tintetorsdag:latest && docker push mariussd/tintetorsdag:latest",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
