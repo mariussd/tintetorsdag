@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./images/logo.png";
+import "./App.scss";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div>
+      <div class="flexbox">
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://www.facebook.com/groups/320621909163662"
           target="_blank"
           rel="noopener noreferrer"
+          alt="logo"
         >
-          Learn React
+          <div class="flexbox">
+            <img
+              src={logo}
+              alt="Logoen til Tintetorsdag"
+              width="25%"
+              height="25%"
+            />
+          </div>
         </a>
-      </header>
+        <h1 id="main-heading">Aldri sint med en tint!</h1>
+        <br />
+        <p>
+          Stiftet av Magnus Rand og Marius Sørensen Dreyer i det Herrens år
+          2020.
+        </p>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
