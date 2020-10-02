@@ -6,7 +6,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 10%;
 }
 
 .flexbox {
@@ -17,6 +16,39 @@
 
 #main-heading {
   font-family: "Playfair Display", serif;
-  margin-top: 70px;
   color: #3f3f3f;
+}
+
+.header {
+  width: 100%;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: #3f3f3f;
+}
+
+.header-image-container {
+  height: 62px;
+  width: 62px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.header-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  @media screen and (max-width: 600px) {
+    font-size: 1.3em;
+  }
 }
